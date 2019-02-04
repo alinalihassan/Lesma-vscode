@@ -1,0 +1,25 @@
+{
+    "name": "lesma",
+    "displayName": "Lesma",
+    "description": "Lesma language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lesma",
+            "aliases": ["Lesma", "lesma"],
+            "extensions": [".les"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lesma",
+            "scopeName": "source.lesma",
+            "path": "./syntaxes/lesma.tmLanguage.json"
+        }]
+    }
+}
