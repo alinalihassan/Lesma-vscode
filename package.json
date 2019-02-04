@@ -1,8 +1,8 @@
 {
     "name": "lesma",
     "displayName": "Lesma",
-    "description": "Lesma language support",
-    "version": "0.0.1",
+    "description": "Lesma Language Support",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -10,16 +10,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "lesma",
-            "aliases": ["Lesma", "lesma"],
-            "extensions": [".les"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "lesma",
-            "scopeName": "source.lesma",
-            "path": "./syntaxes/lesma.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "lesma",
+                "aliases": [
+                    "Lesma",
+                    "lesma"
+                ],
+                "extensions": [
+                    ".les"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lesma",
+                "scopeName": "source.lesma",
+                "path": "./syntaxes/lesma.tmLanguage.json"
+            }
+        ]
     }
 }
