@@ -9,9 +9,6 @@
 			"include": "#operators"
 		},
 		{
-			"include": "#modifiers"
-		},
-		{
 			"include": "#comments"
 		},
 		{
