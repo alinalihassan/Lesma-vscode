@@ -25,6 +25,9 @@
 		},
 		{
 			"include": "#functions"
+		},
+		{
+			"include": "#invalid"
 		}
 	],
 	"repository": {
@@ -159,6 +162,14 @@
 				{
 					"name": "constant.language.float.lesma",
 					"match": "\\b(inf)\\b"
+				}
+			]
+		},
+		"invalid": {
+			"patterns": [
+				{
+					"name": "invalid.illegal",
+					"match": ";"
 				}
 			]
 		}
