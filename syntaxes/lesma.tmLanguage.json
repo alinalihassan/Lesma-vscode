@@ -129,6 +129,11 @@
 					"comment": "Built-in Types",
 					"name": "support.type.lesma",
 					"match": "\\b(bool|str|u?int\\d*|float|double|void|any|func|list|tuple)\\b"
+				},
+				{
+					"comment": "Type annotation",
+					"name": "support.function.lesma",
+					"match": "(?<=:\\s|->\\s)[a-zA-Z0-9_]+"
 				}
 			]
 		},
@@ -138,6 +143,11 @@
 					"comment": "Catch the function call and function definition",
 					"name": "support.function.lesma",
 					"match": "(?=[a-zA-Z0-9_]+\\()[a-zA-Z0-9_]+"
+				},
+				{
+					"comment": "Class/Struct declaration",
+					"name": "support.function.lesma",
+					"match": "(?<=class |struct )[a-zA-Z0-9_]+"
 				}
 			]
 		},
