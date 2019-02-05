@@ -137,7 +137,7 @@
 				{
 					"comment": "Catch the function call and function definition",
 					"name": "support.function.lesma",
-					"match": "(?=[a-zA-Z0-9_]+\\(.*\\))[a-zA-Z0-9_]+"
+					"match": "(?=[a-zA-Z0-9_]+\\()[a-zA-Z0-9_]+"
 				}
 			]
 		},
