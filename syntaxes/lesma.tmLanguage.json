@@ -168,7 +168,7 @@
 		"invalid": {
 			"patterns": [
 				{
-					"name": "invalid.illegal",
+					"name": "invalid.illegal.lesma",
 					"match": ";"
 				}
 			]
