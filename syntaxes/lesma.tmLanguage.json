@@ -9,9 +9,6 @@
 			"include": "#operators"
 		},
 		{
-			"include": "#modifiers"
-		},
-		{
 			"include": "#comments"
 		},
 		{
@@ -28,6 +25,9 @@
 		},
 		{
 			"include": "#functions"
+		},
+		{
+			"include": "#invalid"
 		}
 	],
 	"repository": {
@@ -73,7 +73,7 @@
 				},
 				{
 					"name": "keyword.operator.arithmetic.lesma",
-					"match": "\\+|\\-|\\*|\\^|\\/"
+					"match": "\\+|\\-|\\*|\\^|\\/|\\%"
 				},
 				{
 					"name": "keyword.operator.relational.lesma",
@@ -126,22 +126,35 @@
 		"types": {
 			"patterns": [
 				{
+					"comment": "Built-in Types",
 					"name": "support.type.lesma",
 					"match": "\\b(bool|str|u?int\\d*|float|double|void|any|func|list|tuple)\\b"
+				},
+				{
+					"comment": "Type annotation",
+					"name": "support.function.lesma",
+					"match": "(?<=:\\s|->\\s)[a-zA-Z0-9_]+"
 				}
 			]
 		},
 		"functions": {
 			"patterns": [
 				{
+					"comment": "Catch the function call and function definition",
 					"name": "support.function.lesma",
-					"match": "\\b(print|input)\\b"
+					"match": "(?=[a-zA-Z0-9_]+\\()[a-zA-Z0-9_]+"
+				},
+				{
+					"comment": "Class/Struct declaration",
+					"name": "support.function.lesma",
+					"match": "(?<=class\\s|struct\\s|enum\\s)[a-zA-Z0-9_]+"
 				}
 			]
 		},
 		"comments": {
 			"patterns": [
 				{
+					"comment": "Single line comment",
 					"name": "comment.line.lesma",
 					"begin": "#",
 					"beginCaptures": {
@@ -156,12 +169,23 @@
 		"constants": {
 			"patterns": [
 				{
+					"comment": "Boolean constants",
 					"name": "constant.language.boolean.lesma",
 					"match": "\\b(true|false)\\b"
 				},
 				{
+					"comment": "Arithmetic constants",
 					"name": "constant.language.float.lesma",
 					"match": "\\b(inf)\\b"
+				}
+			]
+		},
+		"invalid": {
+			"patterns": [
+				{
+					"comment": "Semicolon as invalid",
+					"name": "invalid.illegal.lesma",
+					"match": ";"
 				}
 			]
 		}
