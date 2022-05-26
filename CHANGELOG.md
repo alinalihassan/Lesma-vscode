@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.4...v0.3.5) (2022-05-26)
+
+
+### Bug Fixes
+
+* Changed CI ([67c89fe](https://github.com/alinalihassan/Lesma-vscode/commit/67c89fe5ac504cb12d4c3b49932be8a92bd84eb0))
+
 ## [0.3.4](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.3...v0.3.4) (2022-05-26)
 
 
