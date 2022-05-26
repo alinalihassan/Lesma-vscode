@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.3...v0.3.4) (2022-05-26)
+
+
+### Bug Fixes
+
+* Fix CI not triggering tag ([32b8572](https://github.com/alinalihassan/Lesma-vscode/commit/32b8572b29a67959f520e3fb51ff6f510cfd83eb))
+
 ## [0.3.3](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.2...v0.3.3) (2022-05-26)
 
 
