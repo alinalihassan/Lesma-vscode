@@ -2,9 +2,10 @@
     "name": "lesma",
     "displayName": "Lesma",
     "description": "Lesma Language Support",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "publisher": "hassanalinali",
-    "repository": "https://github.com/hassanalinali/Lesma-vscode",
+    "repository": "https://github.com/alinalihassan/Lesma-vscode",
+    "license": "LICENSE",
     "author": "Alin Ali Hassan",
     "icon": "icon.png",
     "engines": {

@@ -34,12 +34,16 @@
 		"keywords": {
 			"patterns": [
 				{
+					"name": "keyword.vardecl.lesma",
+					"match": "\\b(let|var)\\b"
+				},
+				{
 					"name": "keyword.control.lesma",
-					"match": "\\b(if|else|while|for|in|switch|case|default|break|fallthrough|return|pass|defer)\\b"
+					"match": "\\b(if|else|while|for|in|break|continue|return|pass|defer|let|var|import)\\b"
 				},
 				{
 					"name": "keyword.other.lesma",
-					"match": "\\b(const|class|struct|enum|type|def|extern|operator)\\b"
+					"match": "\\b(class|enum|type|def|extern|operator)\\b"
 				},
 				{
 					"name": "variable.language.lesma",
@@ -50,7 +54,6 @@
 		"operators": {
 			"patterns": [
 				{
-					"comment": "Needs to come before assignment operator so this match has precedence",
 					"name": "keyword.operator.comparison.lesma",
 					"match": "==|!="
 				},				
@@ -59,7 +62,6 @@
 					"match": "\\.\\."
 				},
 				{
-					"comment": "Needs to come before subtract operator",
 					"name": "keyword.operator.arrow.lesma",
 					"match": "->"
 				},
@@ -69,7 +71,7 @@
 				},
 				{
 					"name": "keyword.operator.expression.lesma",
-					"match": "\\b(and|or|xor|not|is|as)\\b"
+					"match": "\\b(and|or|not|is|as)\\b"
 				},
 				{
 					"name": "keyword.operator.arithmetic.lesma",
@@ -87,17 +89,6 @@
 					"name": "string.quoted.double.lesma",
 					"begin": "\"",
 					"end": "\"",
-					"patterns": [
-						{
-							"name": "constant.character.escape.lesma",
-							"match": "\\\\."
-						}
-					]
-				},
-				{
-					"name": "string.quoted.single.lesma",
-					"begin": "'",
-					"end": "'",
 					"patterns": [
 						{
 							"name": "constant.character.escape.lesma",
@@ -147,7 +138,7 @@
 				{
 					"comment": "Class/Struct declaration",
 					"name": "support.function.lesma",
-					"match": "(?<=class\\s|struct\\s|enum\\s)[a-zA-Z0-9_]+"
+					"match": "(?<=class\\s|enum\\s)[a-zA-Z0-9_]+"
 				}
 			]
 		},
@@ -172,11 +163,6 @@
 					"comment": "Boolean constants",
 					"name": "constant.language.boolean.lesma",
 					"match": "\\b(true|false)\\b"
-				},
-				{
-					"comment": "Arithmetic constants",
-					"name": "constant.language.float.lesma",
-					"match": "\\b(inf)\\b"
 				}
 			]
 		},
