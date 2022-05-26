@@ -119,7 +119,7 @@
 				{
 					"comment": "Built-in Types",
 					"name": "support.type.lesma",
-					"match": "\\b(bool|str|u?int\\d*|float|double|void|any|func|list|tuple)\\b"
+					"match": "\\b(bool|str|int|float|void)\\b"
 				},
 				{
 					"comment": "Type annotation",
