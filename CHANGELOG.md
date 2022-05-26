@@ -1,3 +1,11 @@
+## [0.3.6](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.5...v0.3.6) (2022-05-26)
+
+
+### Bug Fixes
+
+* Added npm to semantic release ([d10ff59](https://github.com/alinalihassan/Lesma-vscode/commit/d10ff5973372af38399c5959bfc3be24dc60ad4d))
+* Fixed Semantic Versioning ([39d6d18](https://github.com/alinalihassan/Lesma-vscode/commit/39d6d18ea1de4ae0b137e834cea0f56826744cd5))
+
 ## [0.3.5](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.4...v0.3.5) (2022-05-26)
 
 

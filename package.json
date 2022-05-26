@@ -2,7 +2,7 @@
     "name": "lesma",
     "displayName": "Lesma",
     "description": "Lesma Language Support",
-    "version": "0.2.3",
+    "version": "0.3.6",
     "publisher": "hassanalinali",
     "repository": "https://github.com/alinalihassan/Lesma-vscode",
     "license": "LICENSE",
@@ -12,15 +12,17 @@
         "vscode": "^1.30.0"
     },
     "release": {
-        "branches": ["main"],
+        "branches": [
+            "main"
+        ],
         "plugins": [
             "@semantic-release/commit-analyzer",
             "@semantic-release/release-notes-generator",
             [
-              "@semantic-release/npm",
-              {
-                "npmPublish": false
-              }
+                "@semantic-release/npm",
+                {
+                    "npmPublish": false
+                }
             ],
             "@semantic-release/github",
             "@semantic-release/changelog",
