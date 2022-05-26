@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.1...v0.3.2) (2022-05-26)
+
+
+### Bug Fixes
+
+* Fixed publish CI not responding to release properly ([f652c59](https://github.com/alinalihassan/Lesma-vscode/commit/f652c59b9805483c6c1fc27d43bc73650cb7ac16))
+
 ## [0.3.1](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.0...v0.3.1) (2022-05-26)
 
 
