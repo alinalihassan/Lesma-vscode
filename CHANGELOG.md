@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.7...v0.4.0) (2022-08-02)
+
+
+### Features
+
+* Added module keywords ([1991cb3](https://github.com/alinalihassan/Lesma-vscode/commit/1991cb3766b3dccc1dcb775343bba004bc2e4541))
+
 ## [0.3.7](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.6...v0.3.7) (2022-05-26)
 
 
