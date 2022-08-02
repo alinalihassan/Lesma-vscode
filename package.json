@@ -2,7 +2,7 @@
     "name": "lesma",
     "displayName": "Lesma",
     "description": "Lesma Language Support",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "publisher": "hassanalinali",
     "repository": "https://github.com/alinalihassan/Lesma-vscode",
     "license": "LICENSE",
