@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.0...v1.0.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* reverted build without esbuild ([f845292](https://github.com/alinalihassan/Lesma-vscode/commit/f845292416710288058cdc2ee9116502d0285a24))
+
 # [1.0.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.5.1...v1.0.0) (2023-04-30)
 
 
