@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/alinalihassan/Lesma-vscode/compare/v0.5.0...v0.5.1) (2023-04-30)
+
+
+### Bug Fixes
+
+* packaging fixes ([e902e1f](https://github.com/alinalihassan/Lesma-vscode/commit/e902e1f77ef6eb62f18c5ecb496bddbfbf6295e2))
+
 # [0.5.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.4.0...v0.5.0) (2023-04-30)
 
 
