@@ -1,57 +1,94 @@
 {
-    "name": "lesma",
-    "displayName": "Lesma",
-    "description": "Lesma Language Support",
-    "version": "0.4.0",
-    "publisher": "hassanalinali",
-    "repository": "https://github.com/alinalihassan/Lesma-vscode",
-    "license": "LICENSE",
-    "author": "Alin Ali Hassan",
-    "icon": "icon.png",
-    "engines": {
-        "vscode": "^1.30.0"
+  "name": "lesma-vscode",
+  "displayName": "Lesma Language Support",
+  "description": "Lesma Language Support in VSCode",
+  "author": "Alin Ali Hassan",
+  "publisher": "hassanalinali",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alinalihassan/Lesma-vscode"
+  },
+  "icon": "assets/logo.png",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "lesma"
+  ],
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "main": "./client/out/extension",
+  "contributes": {
+    "configuration": {
+      "title": "Lesma",
+      "properties": {
+        "lesma.compilerPath": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "scope": "machine-overridable",
+          "default": null,
+          "description": "Lesma installation path"
+        }
+      }
     },
-    "release": {
-        "branches": [
-            "main"
+    "languages": [
+      {
+        "id": "lesma",
+        "aliases": [
+          "Lesma",
+          "lesma"
         ],
-        "plugins": [
-            "@semantic-release/commit-analyzer",
-            "@semantic-release/release-notes-generator",
-            [
-                "@semantic-release/npm",
-                {
-                    "npmPublish": false
-                }
-            ],
-            "@semantic-release/github",
-            "@semantic-release/changelog",
-            "@semantic-release/git"
-        ]
-    },
-    "categories": [
-        "Programming Languages"
+        "icon": {
+          "light": "./assets/logo.svg",
+          "dark": "./assets/logo.svg"
+        },
+        "extensions": [
+          ".les"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "lesma",
-                "aliases": [
-                    "Lesma",
-                    "lesma"
-                ],
-                "extensions": [
-                    ".les"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "lesma",
-                "scopeName": "source.lesma",
-                "path": "./syntaxes/lesma.tmLanguage.json"
-            }
-        ]
-    }
+    "grammars": [
+      {
+        "language": "lesma",
+        "scopeName": "source.lesma",
+        "path": "./syntaxes/lesma.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "lesma.run",
+        "title": "Lesma: Run"
+      },
+      {
+        "command": "lesma.install",
+        "title": "Lesma: Install"
+      },
+      {
+        "command": "lesma.run-with-flags",
+        "title": "Lesma: Run with Flags"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "lint": "eslint ./client/src ./server/src --ext .ts,.tsx",
+    "postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "mocha": "^9.2.1",
+    "typescript": "^5.0.2"
+  }
 }

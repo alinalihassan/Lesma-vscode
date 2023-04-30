@@ -1,0 +1,49 @@
+{
+  "name": "lesma-ls-client",
+  "description": "Lesma Language Client",
+  "author": "Alin Ali Hassan",
+  "license": "MIT",
+  "version": "0.0.1",
+  "publisher": "Lesma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-extension-samples"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "contributes": {
+    "configuration": {
+      "languages": [
+        {
+          "id": "lesma",
+          "aliases": [
+            "Lesma",
+            "lesma"
+          ],
+          "extensions": [
+            ".les"
+          ],
+          "configuration": "../language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "lesma",
+          "scopeName": "source.lesma",
+          "path": "../syntaxes/lesma.tmLanguage.json"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@microsoft/vscode-file-downloader-api": "^1.0.1",
+    "axios": "^1.4.0",
+    "vscode-languageclient": "^8.1.0",
+    "which": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.1",
+    "@vscode/test-electron": "^2.2.3"
+  }
+}

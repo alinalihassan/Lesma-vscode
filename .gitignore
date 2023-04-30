@@ -1,6 +1,4 @@
-.vscode/**
-.idea/
-node_modules/**
-vsc-extension-quickstart.md
-
-*.vsix
+out
+node_modules
+client/server
+.vscode-test
