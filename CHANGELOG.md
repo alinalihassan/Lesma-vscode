@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.4.0...v0.5.0) (2023-04-30)
+
+
+### Features
+
+* refactored the whole project ([39a756c](https://github.com/alinalihassan/Lesma-vscode/commit/39a756c4dd3615d06cc8ec84c7903ada708ceff2))
+
 # [0.4.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.3.7...v0.4.0) (2022-08-02)
 
 
