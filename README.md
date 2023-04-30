@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/github/license/alinalihassan/Lesma?color=yellow)](https://github.com/alinalihassan/Lesma/blob/main/LICENSE.txt)
 [![Version](https://img.shields.io/github/v/release/alinalihassan/Lesma-vscode?color=brightgreen)](https://github.com/alinalihassan/Lesma/releases)
 [![Platform](https://img.shields.io/badge/platforms-%20Linux%20|%20macOS-green.svg?color=lightgrey)](https://github.com/alinalihassan/Lesma/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/alinalihassan/Lesma-vscode/Release)](https://github.com/alinalihassan/Lesma/actions/workflows/ci.yaml)
+[![Build](https://img.shields.io/github/actions/workflow/status/alinalihassan/Lesma-vscode/ci.yml)](https://github.com/alinalihassan/Lesma/actions/workflows/ci.yaml)
 
 </div>
 
