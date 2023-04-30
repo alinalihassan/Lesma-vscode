@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/alinalihassan/Lesma-vscode/compare/v0.5.1...v1.0.0) (2023-04-30)
+
+
+### Features
+
+* new Lesma language server rebuilt from ground up ([d635bdb](https://github.com/alinalihassan/Lesma-vscode/commit/d635bdbb604b96c0730a1b96052ce6a6e5ff73a7))
+
+
+### BREAKING CHANGES
+
+* The old files have been removed, no stability guarantee
+
 ## [0.5.1](https://github.com/alinalihassan/Lesma-vscode/compare/v0.5.0...v0.5.1) (2023-04-30)
 
 
