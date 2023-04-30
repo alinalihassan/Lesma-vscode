@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as vscode from "vscode";
-import * as which from "which";
+import which from "which";
 
 export default class SystemCommands {
   private static getLesmaLangConfiguration() {

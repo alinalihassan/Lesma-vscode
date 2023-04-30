@@ -5,10 +5,10 @@ import {
   InitializeParams,
   DidChangeConfigurationNotification,
   TextDocumentSyncKind,
-  InitializeResult
-} from 'vscode-languageserver/node';
+  InitializeResult,
+} from "vscode-languageserver/node";
 
-import { TextDocument } from 'vscode-languageserver-textdocument';
+import { TextDocument } from "vscode-languageserver-textdocument";
 
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -42,17 +42,17 @@ connection.onInitialize((params: InitializeParams) => {
     capabilities: {
       textDocumentSync: TextDocumentSyncKind.Incremental,
       // Tell the client that this server doesn't supports code completion. (yet)
-			completionProvider: {
-				resolveProvider: false,
-        "triggerCharacters": [ '.' ]
-			},
-    }
+      completionProvider: {
+        resolveProvider: false,
+        triggerCharacters: ["."],
+      },
+    },
   };
   if (hasWorkspaceFolderCapability) {
     result.capabilities.workspace = {
       workspaceFolders: {
-        supported: true
-      }
+        supported: true,
+      },
     };
   }
   return result;
@@ -61,24 +61,27 @@ connection.onInitialize((params: InitializeParams) => {
 connection.onInitialized(() => {
   if (hasConfigurationCapability) {
     // Register for all configuration changes.
-    connection.client.register(DidChangeConfigurationNotification.type, undefined);
+    connection.client.register(
+      DidChangeConfigurationNotification.type,
+      undefined
+    );
   }
   if (hasWorkspaceFolderCapability) {
-    connection.workspace.onDidChangeWorkspaceFolders(_event => {
-      connection.console.log('Workspace folder change event received.');
+    connection.workspace.onDidChangeWorkspaceFolders((_event) => {
+      connection.console.log("Workspace folder change event received.");
     });
   }
 });
 
-connection.onDidChangeTextDocument(change => {
-	// The content of a text document has changed. This event is emitted
-	// when the text document first opened or when its content has changed.
-	connection.console.log('onDidChangeTextDocument');
+connection.onDidChangeTextDocument((change) => {
+  // The content of a text document has changed. This event is emitted
+  // when the text document first opened or when its content has changed.
+  connection.console.log("onDidChangeTextDocument");
 });
 
-connection.onDidChangeWatchedFiles(_change => {
+connection.onDidChangeWatchedFiles((_change) => {
   // Monitored files have change in VS Code
-  connection.console.log('We received a file change event');
+  connection.console.log("We received a file change event");
 });
 
 // Make the text document manager listen on the connection

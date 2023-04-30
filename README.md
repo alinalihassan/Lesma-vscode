@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="docs/static/img/logo.svg" height="180px" style="height: 180px" alt="Lesma Programming Language" title="Lesma Programming Language">
+  <img src="assets/logo.png" height="180px" style="height: 180px" alt="Lesma Programming Language" title="Lesma Programming Language">
   <br>
   Lesma
 </h1>
