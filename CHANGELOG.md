@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.4...v1.0.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* added more logs ([a3cb132](https://github.com/alinalihassan/Lesma-vscode/commit/a3cb132dd1ee65e16585ef6d6027ac36bc703717))
+
 ## [1.0.4](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.3...v1.0.4) (2023-05-01)
 
 
