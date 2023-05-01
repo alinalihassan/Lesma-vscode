@@ -1,6 +1,6 @@
 {
-  "name": "lesma-vscode",
-  "displayName": "Lesma Language Support",
+  "name": "lesma",
+  "displayName": "Lesma",
   "description": "Lesma Language Support in VSCode",
   "author": "Alin Ali Hassan",
   "publisher": "hassanalinali",
