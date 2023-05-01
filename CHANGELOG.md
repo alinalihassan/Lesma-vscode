@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.5...v1.0.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* moved package which to main package.json ([0714267](https://github.com/alinalihassan/Lesma-vscode/commit/0714267ff0ca9e4aef9638c3423f58c7a4a8e10e))
+
 ## [1.0.5](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.4...v1.0.5) (2023-05-01)
 
 
