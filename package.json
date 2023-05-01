@@ -15,7 +15,10 @@
     "Programming Languages"
   ],
   "activationEvents": [
-    "onLanguage:lesma"
+    "onLanguage:lesma",
+    "onCommand:lesma.run",
+    "onCommand:lesma.install",
+    "onCommand:lesma.run-with-flags"
   ],
   "keywords": [
     "lesma"
