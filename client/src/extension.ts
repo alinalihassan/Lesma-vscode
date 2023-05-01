@@ -10,10 +10,13 @@ import {
 } from "vscode-languageclient/node";
 import { getIndentDedentConfiguration } from "./configurations/indentDedentConfiguration";
 import { checkForLesma, setLesmaCommands } from "./lesma/lesmaCommands";
+import OutputConsole from "./utils/OutputConsole";
 
 let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
+  OutputConsole.clear();
+  OutputConsole.println("Lesma extension activated");
   // Check for Lesma when the extension is activated
   // Ask the user to install Lesma if it is not found
   checkForLesma(context);
@@ -59,6 +62,7 @@ export function activate(context: ExtensionContext) {
     getIndentDedentConfiguration()
   );
 
+  OutputConsole.println("Lesma extension started");
   // Start the client. This will also launch the server
   client.start();
 }
