@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.2...v1.0.3) (2023-05-01)
+
+
+### Bug Fixes
+
+* fixed package json not including commands for activation ([6c9552c](https://github.com/alinalihassan/Lesma-vscode/commit/6c9552c82bb02a80e1402f22443fbd9bdcb8ba3f))
+
 ## [1.0.2](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.1...v1.0.2) (2023-05-01)
 
 
