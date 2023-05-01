@@ -37,12 +37,10 @@
     }
   },
   "dependencies": {
-    "vscode-languageclient": "^8.1.0",
-    "which": "^3.0.0"
+    "vscode-languageclient": "^8.1.0"
   },
   "devDependencies": {
     "@types/vscode": "^1.75.1",
-    "@types/which": "^3.0.0",
     "@vscode/test-electron": "^2.2.3"
   }
 }
