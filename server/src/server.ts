@@ -42,10 +42,10 @@ connection.onInitialize((params: InitializeParams) => {
     capabilities: {
       textDocumentSync: TextDocumentSyncKind.Incremental,
       // Tell the client that this server doesn't supports code completion. (yet)
-      completionProvider: {
-        resolveProvider: false,
-        triggerCharacters: ["."],
-      },
+      // completionProvider: {
+      //   resolveProvider: false,
+      //   triggerCharacters: ["."],
+      // },
     },
   };
   if (hasWorkspaceFolderCapability) {
