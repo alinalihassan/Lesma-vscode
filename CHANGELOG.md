@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.6...v1.0.7) (2023-05-04)
+
+
+### Bug Fixes
+
+* commented out incomplete completion provider ([9932aa3](https://github.com/alinalihassan/Lesma-vscode/commit/9932aa3dc95c88c6c4d4c7c77aea111a86a9040a))
+
 ## [1.0.6](https://github.com/alinalihassan/Lesma-vscode/compare/v1.0.5...v1.0.6) (2023-05-01)
 
 
